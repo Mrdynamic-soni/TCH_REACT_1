@@ -1,0 +1,30 @@
+.card{
+    background-color:antiquewhite;
+    border: 2px solid orange;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius:0.5rem;
+}
+
+
+.heading{
+font-size: 1.5rem;
+font-weight: bold;    
+}
+
+
+.desc{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn{
+    border: 2px solid tomato;
+    margin-top: 1rem ;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color:  orangered;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 500;
+}

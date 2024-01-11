@@ -1,0 +1,28 @@
+.container{
+ font-size: 2rem;
+ font-weight: 800;
+ color: chocolate;
+ margin: 1rem;
+}
+
+.counter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.minusButton{
+    background-color: red;
+    border: 2px solid brown;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.addButton{
+    background-color: greenyellow;
+    border: 2px solid green;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}

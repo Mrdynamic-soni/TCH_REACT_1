@@ -11,7 +11,6 @@ const Counter = () => {
     const minusONe = () => {
         setValue(value - 1)
     }
-console.log("...........hello");
     return (
         <div className='container'>
             <div> Counter</div>

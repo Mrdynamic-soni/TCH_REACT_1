@@ -1,0 +1,19 @@
+.maincontainer{
+ background-color: aquamarine;
+ margin: 1rem;
+ padding: 1rem;
+ border-radius: 0.5rem;
+ display: flex;
+ justify-content: space-between;
+}
+
+.name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: cornflowerblue;
+}
+.phone{
+    font-size: 1rem;
+    font-weight: 500;
+    color: burlywood;
+}

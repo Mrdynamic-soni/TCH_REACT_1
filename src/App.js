@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './components/card/Card';
 import Counter from './components/Counter/Counter';
+import SelectionList from './components/SelectionList/SelectionList';
 
 export const App = () => {
 
@@ -64,6 +65,7 @@ export const App = () => {
   return (
     <>
       <div className='heading'> CARD CONTAINER </div>
+      <SelectionList/>
       <Counter/>
       {renderList}
     </>

@@ -6,7 +6,7 @@ const SelectionList = () => {
     const [list, setList] = useState([])
     const [contacts, setContacts] = useState([])
 
-
+console.log(list);
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
             .then((res) => res.json())

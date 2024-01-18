@@ -2,6 +2,8 @@ import React from 'react';
 import Card from './components/card/Card';
 import Counter from './components/Counter/Counter';
 import SelectionList from './components/SelectionList/SelectionList';
+import NavigationBar from './components/NavigationBar/NavigationBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export const App = () => {
 
@@ -23,7 +25,7 @@ export const App = () => {
       heading: "third card",
       desc: "Hey this the very third card",
       buttonName: "Click the third Button"
-    }, 
+    },
     {
       onPress: () => { alert("this is fourth button") },
       heading: "fourth card",
@@ -35,13 +37,13 @@ export const App = () => {
       heading: "fifth card",
       desc: "Hey this the very fifth card",
       buttonName: "Click the fifth Button"
-    }, 
+    },
     {
       onPress: () => { alert("this is sixth button") },
       heading: "sixth card",
       desc: "Hey this the very sixth card",
       buttonName: "Click the sixth Button"
-    }, 
+    },
     {
       onPress: () => { alert("this is seventh button") },
       heading: "seventh card",
@@ -49,25 +51,29 @@ export const App = () => {
       buttonName: "Click the seventh Button"
     }
   ]
-  
-  const renderList = cards.map((item,index) => {
+
+  const RenderList =()=>{return(cards.map((item, index) => {
     return (
-      <Card 
+      <Card
         key={index}
-        onPress={item?.onPress} 
+        onPress={item?.onPress}
         heading={item?.heading}
         desc={item?.desc}
         buttonName={item?.buttonName}
-         />
-        )
-  })
+      />
+    )
+  }))}
 
   return (
     <>
-      <div className='heading'> CARD CONTAINER </div>
-      <SelectionList/>
-      <Counter/>
-      {renderList}
+      <BrowserRouter>
+        <NavigationBar />
+        <Routes>
+          <Route path="/" element={<SelectionList />} />
+          <Route path="counter" element={<Counter />} />
+          <Route path="renderList" element={<RenderList/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

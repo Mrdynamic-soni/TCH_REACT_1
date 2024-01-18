@@ -1,0 +1,22 @@
+.navigationBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color:rgb(208, 214, 214);  
+}
+
+.leftView{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.rightView{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color:rgb(208, 214, 214); 
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color:dimgrey;
+}
